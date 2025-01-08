@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.bio-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+.bio-content {
+    flex: 1;
+    padding: 20px;
+}
+.bio-image {
+    flex: 1;
+    padding: 20px;
+}
+h2 {
+    color: #333;
+}
+p {
+    line-height: 1.6;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.team-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.team-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.team-member {
+  display: inline-block;
+  background: #fff;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-photo {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 20px auto 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.team-member h3 {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+.team-member p {
+  font-weight: 400;
+  color: #666;
+  padding: 0 20px 20px;
+}
+
+.team-row {
+  margin-bottom: 20px;
+}
+
+.professor .team-photo {
+  border: 3px solid #6c757d; /* A different border color for professors */
+}
+
+.master-student .team-photo {
+  border: 3px solid #28a745; /* A different border color for master's students */
+}
+
+.undergraduate .team-photo {
+  border: 3px solid #007bff; /* A different border color for undergraduate students */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  bottom: 0;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+  flex: 1; /* Allows nav to grow as needed */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0; /* Adjusted to remove default margin */
+}
+
+nav ul li {
+  margin-right: 20px; /* Space between navigation items */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* semi-transparent white */
+}
+
+.title-and-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Aligns the text to the right */
+  flex: 1; /* Allows title-and-quote*/
+
+
+}
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* This ensures space between nav and title-and-quote */
+  padding: 10px 20px; /* Adjust padding as needed */
+  z-index: 1000; /* Ensuring it appears above other content */
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+}

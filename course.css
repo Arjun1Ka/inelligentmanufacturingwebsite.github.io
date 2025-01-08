@@ -1,0 +1,156 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #aaa;
+}
+
+.title h1 {
+  font-size: 2rem;
+}
+
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 100px; /* Push down to accommodate fixed header */
+  padding: 20px;
+}
+
+.course {
+  width: calc(33.333% - 40px);
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: flex-end; /* Align text to the bottom */
+  justify-content: center;
+  height: 200px; /* Fixed height for all course containers */
+  overflow: hidden;
+}
+
+.course:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.course h2 {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Translucent overlay for text */
+  padding: 10px 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  bottom: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  flex: 1; /* Allows nav to grow as needed */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0; /* Adjusted to remove default margin */
+}
+
+nav ul li {
+  margin-right: 20px; /* Space between navigation items */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* semi-transparent white */
+}
+
+.title-and-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Aligns the text to the right */
+  flex: 1; /* Allows title-and-quote*/
+
+
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* This ensures space between nav and title-and-quote */
+  padding: 10px 20px; /* Adjust padding as needed */
+  z-index: 1000; /* Ensuring it appears above other content */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
